@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :users, only: [:new, :index, :show, :edir]
+  resources :users, only: [:new, :index, :show, :edit]
   resources :books, only: [:new, :index, :show, :edit]
   devise_for :books
   devise_for :users
