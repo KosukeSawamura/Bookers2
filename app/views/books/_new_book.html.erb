@@ -21,10 +21,10 @@
 <h2>New book</h2>
   <%= form_with model: book do |f| %>
     <label>Title</label><br>
-      <%= f.text_field :book_title %><br>
+      <%= f.text_field :title %><br>
     <label>Opinion</label><br>
-      <%= f.text_area :opinion %><br>
-    <%= f.submit 'Crete Book', class:"btn btn-success" %>
+      <%= f.text_area :body %><br>
+    <%= f.submit 'Create Book', class:"btn btn-success" %>
   <% end %>
 
   </div>

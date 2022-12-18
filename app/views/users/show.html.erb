@@ -1,3 +1,6 @@
+<div>
+  <%= flash[:notice] %>
+</div>
 <div class="container">
   <div class="row">
    <%= render 'books/new_book', book: @book, user: @user %>
@@ -18,9 +21,9 @@
             <td><%= image_tag @user.get_profile_image(100,100) %></td>
             <td>
               <%= link_to book_path(book.id) do %>
-              <%= book.book_title %>
+              <%= book.title %>
               <% end %></td>
-            <td><%= book.opinion %></td>
+            <td><%= book.body %></td>
           </tr>
           <% end %>
         </tbody>
